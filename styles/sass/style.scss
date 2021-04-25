@@ -1,4 +1,51 @@
 @import 'setup';
-@import 'variables';
+@import 'variable';
+@import 'navigation';
+@import 'portfolio';
 
 // general styles
+
+body{
+    font-family: $secondary;
+    font-size: 1.4rem;
+}
+
+.wrapper{
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3{
+    font-family: $primary;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+// header styles
+
+header{
+    background-color: $green;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+h1{
+    color: #FFF;
+    font-size: 5rem;
+
+}

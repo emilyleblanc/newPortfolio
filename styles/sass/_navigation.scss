@@ -1,0 +1,105 @@
+// navigation
+
+
+nav{
+    background-color: $blue;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.name-email{
+    width: 100%;
+    text-align: center;
+}
+
+.menu-icon{
+    cursor: pointer;
+    padding: 2em;
+}
+
+.hamburger{
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    width:2.5em;
+    height:4px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-out;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content:"";
+    position: absolute;
+    left: 0;
+}
+
+
+.hamburger::before{
+    bottom: 8px;
+} 
+
+.hamburger::after{
+    top: 8px;
+}
+
+// on click .nav-open class is added
+
+.nav-open .hamburger{
+    transform: rotate(45deg);
+
+}
+
+.nav-open .hamburger::after{
+    transform: rotate(90deg);
+    top:1px;
+}
+
+.nav-open .hamburger::before{
+    opacity: 0;
+}
+
+.navigation{
+    background-color:$green;
+    position: absolute;
+    right:-150px;
+    top:0;
+    transition: all 0.3s ease-in;
+    li{
+        margin: 1em 0 1em;
+        a{
+            padding: 2em;
+        }
+    }
+}
+
+.slide-out-menu{
+    overflow: visible;
+}
+
+.slide-out-menu .navigation{
+    right: 150px;
+}
+
+
+
+
+
+
+
+
+   
