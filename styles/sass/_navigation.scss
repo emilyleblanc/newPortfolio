@@ -4,8 +4,9 @@
 nav{
     background-color: $blue;
     text-transform: uppercase;
-    position: relative;
     overflow: hidden;
+    position: sticky;
+    top:0;
 }
 
 
@@ -74,15 +75,29 @@ nav{
 }
 
 .navigation{
-    background-color:$green;
-    position: absolute;
-    right:-150px;
-    top:0;
-    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right:-190px;
+    top:65px;
+    width: 180px; 
+    height: 215px;
+    background-color: #A0DE21; 
+    -moz-border-radius: 100px 0px;
+    -webkit-border-radius: 100px 0px;
+    border-radius: 100px 0px;
+    transition: all 0.3s ease-in-out;
     li{
-        margin: 1em 0 1em;
+        margin: 0.5em 0 0.5em;
         a{
-            padding: 2em;
+            padding: 0.5em;
+            &:hover,
+            &:focus{
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+            }
         }
     }
 }
@@ -92,7 +107,7 @@ nav{
 }
 
 .slide-out-menu .navigation{
-    right: 150px;
+    right: 10px;
 }
 
 

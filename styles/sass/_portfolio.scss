@@ -1,7 +1,30 @@
 // portfolio
 
+
+
 .portfolio{
     background-color: $orange;
+}
+
+h2,
+h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $dark-grey;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+
+
+section .wrapper > h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: $body-color;
+   
 }
 
 .tech{
@@ -11,10 +34,10 @@
 .projects{
    li{
        display: flex;
+       justify-content: center;
        .img{
            flex: 1;
            height: 30rem;
-           text-align: center;
        }
        .content{
            flex: 1;
@@ -24,6 +47,16 @@
            p{
                max-width: 30ch;
            }
+           i{
+               font-size: 2.5rem;
+               margin-right: 0.5em;
+               color: $dark-grey;
+           }
        }
    }
 }
+
+.projects li:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
