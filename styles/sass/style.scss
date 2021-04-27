@@ -87,11 +87,45 @@ h1{
     background-color: $pink;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    .blog-img{
+        margin: 2em;
+    }
+    .blog-content{
+        max-width: 50ch;
+    }
+}
+
 
 // contact styles
 
 .contact{
     background-color: $blue;
 }
+
+.contact-info{
+    display: flex;
+    
+}
+
+.socials{
+    display: flex;
+    margin-top: 1em;
+    a{
+        padding-right:1em;
+        font-size: 2.5rem;
+        cursor: pointer;
+        &:hover,
+        &:focus{
+            color: $green;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+}
+
 
 

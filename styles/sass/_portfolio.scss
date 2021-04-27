@@ -37,7 +37,8 @@ section .wrapper > h3{
        justify-content: center;
        .img{
            flex: 1;
-           height: 30rem;
+           text-align: right;
+           padding: 0 2em 0 2em;
        }
        .content{
            flex: 1;
@@ -58,5 +59,12 @@ section .wrapper > h3{
 
 .projects li:nth-child(2n){
     flex-direction: row-reverse;
+    .img{
+        text-align: left;
+    }
+    .content{
+        text-align: right;
+        align-items: flex-end;
+    }
 }
 
