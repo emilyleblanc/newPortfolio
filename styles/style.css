@@ -244,6 +244,7 @@ nav {
   position: sticky;
   opacity: 0.9;
   top: 0;
+  z-index: 10;
 }
 
 .nav-container {
@@ -367,6 +368,15 @@ nav {
   background-color: #FECBA7;
 }
 
+.portfolio h2::before {
+  content: url(../../assets/tree1.svg);
+  width: 80px;
+  display: block;
+  position: absolute;
+  left: -68px;
+  top: -62px;
+}
+
 h2,
 h3 {
   text-transform: uppercase;
@@ -377,6 +387,7 @@ h3 {
 h2 {
   font-size: 4rem;
   font-weight: 400;
+  position: relative;
 }
 
 section .wrapper > h3 {
@@ -463,6 +474,11 @@ body {
   margin: 0 auto;
 }
 
+.heading-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
 button {
   padding: 7px 16px;
   border-radius: 500px;
@@ -511,8 +527,20 @@ section p {
 
 header {
   background-color: #A5E9D4;
-  text-align: center;
   text-transform: uppercase;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-img {
+  width: 500px;
 }
 
 h1 {
@@ -522,6 +550,15 @@ h1 {
 
 .blog {
   background-color: #FEB7C0;
+}
+
+.blog h2::before {
+  content: url(../../assets/tree2.svg);
+  width: 80px;
+  display: block;
+  position: absolute;
+  left: -68px;
+  top: -62px;
 }
 
 .container {
@@ -549,6 +586,15 @@ h1 {
   background-color: #BAD1ED;
 }
 
+.contact h3 + h2::before {
+  content: url(../../assets/tree4.svg);
+  width: 80px;
+  display: block;
+  position: absolute;
+  left: -68px;
+  top: -62px;
+}
+
 .contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,6 +616,7 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 30px;
 }
 
 form input {

@@ -16,6 +16,11 @@ body{
     margin: 0 auto;
 }
 
+.heading-container{
+    width: 75%;
+    margin: 0 auto;
+}
+
 button{
     padding: 7px 16px;
     border-radius: 500px;
@@ -69,9 +74,16 @@ section{
 
 header{
     background-color: $green;
-    text-align: center;
     text-transform: uppercase;
-    // clip-path: polygon(0% 3%0% 3%, 100% 1%, 100% 1%, 47% 99%, 47% 99%, 100% 57%, 100% 57%, 0% 59%, 0% 59%); 
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.header-img{
+    width: 500px;
 }
 
 
@@ -86,6 +98,16 @@ h1{
 
 .blog{
     background-color: $pink;
+    h2{
+        &::before{
+            content: url(../../assets/tree2.svg);
+            width: 80px;
+            display: block;
+            position: absolute;
+            left: -68px;
+            top: -62px;
+        }
+    }
 }
 
 .container{
@@ -106,6 +128,17 @@ h1{
 
 .contact{
     background-color: $blue;
+    h3 + h2{
+        &::before{
+            content: url(../../assets/tree4.svg);
+            width: 80px;
+            display: block;
+            position: absolute;
+            left: -68px;
+            top: -62px;
+
+        }
+    }
 }
 
 .contact-info{
@@ -118,6 +151,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 30px;
 
     input{
         margin: 0.5em;
