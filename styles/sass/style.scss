@@ -71,6 +71,7 @@ header{
     background-color: $green;
     text-align: center;
     text-transform: uppercase;
+    // clip-path: polygon(0% 3%0% 3%, 100% 1%, 100% 1%, 47% 99%, 47% 99%, 100% 57%, 100% 57%, 0% 59%, 0% 59%); 
 }
 
 
@@ -109,7 +110,46 @@ h1{
 
 .contact-info{
     display: flex;
-    
+    justify-content:center;
+    padding-top: 2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+        margin: 0.5em;
+        width: 100%;
+        border-radius: 500px;
+    }
+
+    textarea{
+        border-radius: 19px;
+    }
+
+    input,
+    textarea{
+        border: none;
+        padding: 1rem;
+        font-family: $secondary;
+    }
+
+    button{
+        align-self: flex-start;
+    }
+}
+
+.about-me{
+    width: 50%;
+    margin-left: 2em;
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        line-height: 1.6;
+    }
 }
 
 .socials{
@@ -125,6 +165,13 @@ h1{
             transition: color 0.3s ease-in-out;
         }
     }
+}
+
+// footer styles
+
+footer{
+    text-align: center;
+    padding:0.5em;
 }
 
 

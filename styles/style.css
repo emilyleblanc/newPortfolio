@@ -553,6 +553,58 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2em;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input {
+  margin: 0.5em;
+  width: 100%;
+  border-radius: 500px;
+}
+
+form textarea {
+  border-radius: 19px;
+}
+
+form input,
+form textarea {
+  border: none;
+  padding: 1rem;
+  font-family: "Proza Libre", sans-serif;
+}
+
+form button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.about-me {
+  width: 50%;
+  margin-left: 2em;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+}
+
+.about-me p {
+  line-height: 1.6;
 }
 
 .socials {
@@ -572,4 +624,9 @@ h1 {
   color: #A5E9D4;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
 }
