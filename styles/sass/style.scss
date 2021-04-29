@@ -9,6 +9,7 @@
 body{
     font-family: $secondary;
     font-size: 1.4rem;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -85,12 +86,24 @@ header{
 
 .header-img{
     width: 500px;
+    z-index: 9;
 }
 
 
 h1{
     color: #FFF;
     font-size: 5rem;
+}
+
+.position-left{
+    transform: translateX(-700px);
+    opacity: 0;
+}
+
+.slide-in{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in, opacity 0.8s ease-in;
 }
 
 .angle1{
@@ -224,9 +237,7 @@ footer{
     padding:0.5em;
 }
 
-// .inverse{
-//     background-color: rosybrown;
-// }
+
 
 
 

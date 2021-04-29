@@ -9,31 +9,35 @@ hamburgerMenu.addEventListener('click',()=> {
     navEl.classList.toggle('slide-out-menu');
 });
 
-// function for lazy load
+const h1 = document.querySelector('h1')
 
-const sections = document.querySelectorAll('section');
-const header = document.querySelector('header');
+window.addEventListener('load', ()=>{
+    h1.classList.add('slide-in')
+})
 
-const options = {
-    root: null,
-    threshold:0,
-    rootMargin: '-150px'
-};
+// // function for lazy load
 
-const observer = new IntersectionObserver((entries, observer)=>{
-    entries.forEach(entry => {
-        if(!entry.isIntersecting){
-            return;
-        }
-        console.log(entry);
-        entry.target.classList.toggle('inverse');
-        observe.unobserve(entry.target)
-    })
-},options)
+// const h1 = document.querySelector('h1')
 
-sections.forEach(section => {
-    observer.observe(section);
-});
+// const options = {
+//     root: null,
+//     threshold:0,
+//     rootMargin: '0px 0px -150px 0px'
+// };
+
+// const observer = new IntersectionObserver((entries, observer)=>{
+//         if(!entry.isIntersecting){
+//             return;
+//         }else{
+//             console.log(entries);
+//             // entries.classList.add('slide-in');
+//             observer.unobserve(entries.target)
+//         }
+// },options)
+
+
+
+
 
 
 

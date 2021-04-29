@@ -503,6 +503,7 @@ section .wrapper > h3 {
 body {
   font-family: "Proza Libre", sans-serif;
   font-size: 1.4rem;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -578,11 +579,28 @@ header {
 
 .header-img {
   width: 500px;
+  z-index: 9;
 }
 
 h1 {
   color: #FFF;
   font-size: 5rem;
+}
+
+.position-left {
+  -webkit-transform: translateX(-700px);
+          transform: translateX(-700px);
+  opacity: 0;
+}
+
+.slide-in {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease-in, -webkit-transform 0.5s ease-in;
+  transition: opacity 0.8s ease-in, -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, opacity 0.8s ease-in;
+  transition: transform 0.5s ease-in, opacity 0.8s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 .angle1 {
