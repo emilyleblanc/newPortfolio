@@ -1,0 +1,40 @@
+
+.angle{
+    position: relative;
+}
+
+.angle1{
+    &::before{
+        content: " ";
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        background-color:$green;
+        clip-path: polygon(50% 100%, 100% 0, 0 0);
+        position: absolute;
+    }
+}
+
+.angle2{
+    &::before{
+        content: " ";
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        background-color:$orange;
+        clip-path: polygon(73% 100%, 100% 0, 0 0);
+        position: absolute;
+    }
+}
+
+.angle3{
+    &::before{
+        content: " ";
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        background-color:$pink;
+        clip-path: polygon(37% 100%, 100% 0, 0 0);
+        position: absolute;
+    }
+}

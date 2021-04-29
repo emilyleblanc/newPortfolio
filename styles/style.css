@@ -463,6 +463,43 @@ section .wrapper > h3 {
           align-items: flex-end;
 }
 
+.angle {
+  position: relative;
+}
+
+.angle1::before {
+  content: " ";
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  background-color: #A5E9D4;
+  -webkit-clip-path: polygon(50% 100%, 100% 0, 0 0);
+          clip-path: polygon(50% 100%, 100% 0, 0 0);
+  position: absolute;
+}
+
+.angle2::before {
+  content: " ";
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  background-color: #FECBA7;
+  -webkit-clip-path: polygon(73% 100%, 100% 0, 0 0);
+          clip-path: polygon(73% 100%, 100% 0, 0 0);
+  position: absolute;
+}
+
+.angle3::before {
+  content: " ";
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  background-color: #FEB7C0;
+  -webkit-clip-path: polygon(37% 100%, 100% 0, 0 0);
+          clip-path: polygon(37% 100%, 100% 0, 0 0);
+  position: absolute;
+}
+
 body {
   font-family: "Proza Libre", sans-serif;
   font-size: 1.4rem;
@@ -548,6 +585,21 @@ h1 {
   font-size: 5rem;
 }
 
+.angle1 {
+  position: relative;
+}
+
+.angle1::before {
+  content: " ";
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  background-color: #A5E9D4;
+  -webkit-clip-path: polygon(50% 100%, 100% 0, 0 0);
+          clip-path: polygon(50% 100%, 100% 0, 0 0);
+  position: absolute;
+}
+
 .blog {
   background-color: #FEB7C0;
 }
@@ -627,6 +679,7 @@ form input {
 
 form textarea {
   border-radius: 19px;
+  margin-top: 0.5em;
 }
 
 form input,
