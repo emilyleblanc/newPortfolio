@@ -119,15 +119,13 @@ h1{
     }
 }
 
-// portfolio styles in seperate component. look for _portofolio.scss
-
 // blog styles
 
 .blog{
     background-color: $pink;
     h2{
         &::before{
-            content: url(../../assets/tree2.svg);
+            content: url(../../assets/tree4.svg);
             width: 80px;
             display: block;
             position: absolute;
@@ -157,7 +155,7 @@ h1{
     background-color: $blue;
     h3 + h2{
         &::before{
-            content: url(../../assets/tree4.svg);
+            content: url(../../assets/tree2.svg);
             width: 80px;
             display: block;
             position: absolute;

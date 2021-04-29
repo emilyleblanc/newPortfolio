@@ -64,6 +64,9 @@ section .wrapper > h3{
                margin-right: 0.5em;
                color: $dark-grey;
            }
+           span{
+               font-weight: 800;
+           }
        }
    }
 }

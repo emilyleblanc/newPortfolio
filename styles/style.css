@@ -445,6 +445,10 @@ section .wrapper > h3 {
   color: #333333;
 }
 
+.projects li .content span {
+  font-weight: 800;
+}
+
 .projects li:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -623,7 +627,7 @@ h1 {
 }
 
 .blog h2::before {
-  content: url(../../assets/tree2.svg);
+  content: url(../../assets/tree4.svg);
   width: 80px;
   display: block;
   position: absolute;
@@ -657,7 +661,7 @@ h1 {
 }
 
 .contact h3 + h2::before {
-  content: url(../../assets/tree4.svg);
+  content: url(../../assets/tree2.svg);
   width: 80px;
   display: block;
   position: absolute;
