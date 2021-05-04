@@ -15,25 +15,34 @@ window.addEventListener('load', ()=>{
     h1.classList.add('slide-in')
 })
 
-// // function for lazy load
+// function for lazy load
 
-// const h1 = document.querySelector('h1')
+const sectionOne = document.querySelector('.portfolio'); 
 
-// const options = {
-//     root: null,
-//     threshold:0,
-//     rootMargin: '0px 0px -150px 0px'
-// };
+const faders = document.querySelectorAll('.fader');
+console.log(faders)
 
-// const observer = new IntersectionObserver((entries, observer)=>{
-//         if(!entry.isIntersecting){
-//             return;
-//         }else{
-//             console.log(entries);
-//             // entries.classList.add('slide-in');
-//             observer.unobserve(entries.target)
-//         }
-// },options)
+const appearOptions = {
+    root:null,
+    threshold: 0,
+    rootMargin:'-150px' 
+};
+const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            return;
+        }else{
+            console.log(entry.target);
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+
+        }
+    });  
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
 
 
 
