@@ -337,7 +337,7 @@ nav {
   top: 65px;
   width: 180px;
   height: 215px;
-  background-color: #A0DE21;
+  background-color: #528A4B;
   border-radius: 100px 0px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -409,6 +409,7 @@ section .heading-container > h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 1em;
 }
 
 .projects li .img {
@@ -666,15 +667,15 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2em;
 }
 
 .container .blog-img {
-  margin: 2em;
+  margin: 0 2em 0 2em;
 }
 
 .container .blog-content {
   max-width: 50ch;
+  margin-top: 3em;
 }
 
 .contact {
@@ -758,7 +759,7 @@ form button {
 }
 
 .socials a {
-  padding-right: 1em;
+  padding-right: 0.5rem;
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -772,4 +773,59 @@ form button {
 footer {
   text-align: center;
   padding: 0.5em;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .portfolio li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects li:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects li:nth-child(2n) .img {
+    text-align: center;
+  }
+  .projects li:nth-child(2n) .content {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) and (max-width: 480px) {
+  .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info textarea {
+    width: 100%;
+  }
+  .about-me {
+    margin-top: 2em;
+    width: 90%;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

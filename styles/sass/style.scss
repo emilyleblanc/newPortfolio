@@ -139,12 +139,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2em;
     .blog-img{
-        margin: 2em;
+        margin: 0 2em 0 2em;
     }
     .blog-content{
         max-width: 50ch;
+        margin-top: 3em;
     }
 }
 
@@ -217,7 +217,7 @@ form{
     display: flex;
     margin-top: 1em;
     a{
-        padding-right:1em;
+        padding-right:0.5rem;
         font-size: 2.5rem;
         cursor: pointer;
         &:hover,
@@ -233,6 +233,55 @@ form{
 footer{
     text-align: center;
     padding:0.5em;
+}
+
+// media queries
+
+@media (max-width: 720px){
+    h1{
+        font-size: 4rem;
+    }
+
+    .portfolio{
+        li{
+            flex-direction: column;
+        }
+    }
+
+    .projects li:nth-child(2n){
+        flex-direction: column;
+        .img{
+            text-align: center;
+        }
+        .content{
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+
+    @media (max-width:480px){
+        .title{
+            flex-direction: column;
+        }
+
+        .contact-info{
+            flex-direction: column;
+            textarea{
+                width: 100%;
+            }
+        }
+        .about-me{
+            margin-top: 2em;
+            width: 90%;
+        }
+
+        .container{
+            flex-direction: column;
+        }
+
+    }
+
+
 }
 
 

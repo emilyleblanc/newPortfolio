@@ -9,13 +9,15 @@ hamburgerMenu.addEventListener('click',()=> {
     navEl.classList.toggle('slide-out-menu');
 });
 
+// Animation on page load
+
 const h1 = document.querySelector('h1')
 
 window.addEventListener('load', ()=>{
     h1.classList.add('slide-in')
 })
 
-// function for lazy load
+// function for lazy load of portfolio projects
 
 const sectionOne = document.querySelector('.portfolio'); 
 
