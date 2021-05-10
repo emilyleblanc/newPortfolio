@@ -67,7 +67,7 @@ section{
     p{
         color: $body-color;
         font-weight: 200;
-        line-height: 1.3;
+        line-height: 1.5;
     
     }
 }
@@ -211,9 +211,6 @@ form{
     h2{
         font-size: 2rem;
     }
-    p{
-        line-height: 1.6;
-    }
 }
 
 .socials{
@@ -241,6 +238,14 @@ footer{
 // media queries
 
 @media (max-width: 720px){
+
+    // MQ HEADER
+    nav{
+        li{
+            text-align: left;
+            font-size: 1.3rem;
+        }
+    }
     .title{
         flex-direction: column;
         .header-img{
@@ -251,6 +256,8 @@ footer{
     h1{
         font-size: 4rem;
     }
+
+    // MQ PORTFOLIO
 
     .portfolio{
         li{
@@ -272,42 +279,38 @@ footer{
         }
     }
 
-    @media (max-width:720px){
-        nav{
-            li{
-                text-align: left;
-                font-size: 1.3rem;
-            }
-        }
-
-        .projects li .content p{
-            max-width: 100%;
-        }
-
-        .blog-img{
-            margin-top: 2em;
-        }
-
-        .contact-info{
-            flex-direction: column;
-            textarea{
-                width: 100%;
-            }
-        }
-        .about-me{
-            margin-top: 2em;
-            width: 100%;
-            margin-left: 0;
-        }
-
-        .container{
-            flex-direction: column;
-        }
-
+    .projects li .content p{
+        max-width: 100%;
     }
 
+    // MQ BLOG SECTION
 
+    .blog-img{
+        margin-top: 2em;
+    }
+
+    // MQ CONTACT INFO
+
+    .contact-info{
+        flex-direction: column;
+        textarea{
+            width: 100%;
+        }
+    }
+    .about-me{
+        margin-top: 2em;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container{
+        flex-direction: column;
+    }
 }
+
+
+
+
 
 
 
