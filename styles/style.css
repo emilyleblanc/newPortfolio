@@ -822,6 +822,14 @@ footer {
   .projects li .content p {
     max-width: 100%;
   }
+  .from-right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .from-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   .blog-img {
     margin-top: 2em;
   }

@@ -283,6 +283,14 @@ footer{
         max-width: 100%;
     }
 
+    .from-right{
+        transform: translateX(0);
+    }
+    
+    .from-left{
+        transform: translateX(0);
+    }
+
     // MQ BLOG SECTION
 
     .blog-img{
