@@ -21,7 +21,11 @@ nav{
 
 .name-email{
     width: 100%;
-    text-align: center;
+    text-align: left;
+    &:hover,
+    &:focus{
+        text-decoration: underline;
+    }
 }
 
 .menu-icon{
